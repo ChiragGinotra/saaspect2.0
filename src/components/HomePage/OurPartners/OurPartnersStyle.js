@@ -7,6 +7,9 @@ const useStyles = makeStyles((theme) => ({
     gap: "2.3rem",
     flexDirection: "column",
     fontFamily: ["Playfair Display", "serif"].join(","),
+    [theme.breakpoints.down("xl")]: {
+      marginTop: "12%",
+    },
     [theme.breakpoints.down("lg")]: {
       marginTop: "10%",
     },
@@ -27,6 +30,11 @@ const useStyles = makeStyles((theme) => ({
   mainHeading: {
     color: "#301E4E",
     fontWeight: 700,
+
+    [theme.breakpoints.down("xl")]: {
+      fontSize: "7rem",
+      lineHeight: "10rem",
+    },
 
     [theme.breakpoints.down("lg")]: {
       fontSize: "6.1rem",
@@ -49,6 +57,11 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: "1rem",
     fontFamily: "Source Sans Pro",
 
+    [theme.breakpoints.down("xl")]: {
+      lineHeight: "3.5rem",
+      fontSize: "3rem",
+    },
+
     [theme.breakpoints.down("lg")]: {
       lineHeight: "2.75rem",
       fontSize: "2.2rem",
@@ -66,6 +79,9 @@ const useStyles = makeStyles((theme) => ({
   },
 
   imgText: {
+    [theme.breakpoints.down("xl")]: {
+      fontSize: "2.5rem",
+    },
     [theme.breakpoints.down("lg")]: {
       fontSize: "2.1rem",
     },
@@ -84,12 +100,18 @@ const useStyles = makeStyles((theme) => ({
 
   gridContainer: {
     width: "100%",
+    // marginTop: { xs: "2rem", sm: "2%", md: "3%", lg: "5rem", xl: "5rem" },
   },
 
   PartnersImages: {
     // fontSize: "5rem",
     height: "8rem",
     width: "8rem",
+
+    [theme.breakpoints.down("xl")]: {
+      height: "10rem",
+      width: "10rem",
+    },
 
     [theme.breakpoints.down("lg")]: {
       height: "8rem",

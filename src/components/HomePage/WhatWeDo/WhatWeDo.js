@@ -21,7 +21,8 @@ const WeDo = () => {
         {/* <Ellipse /> */}
 
         <Typography className={classes.imgText1}>
-          WHAT WE <br></br>DO.
+          WHAT <br />
+          WE DO.
         </Typography>
         <Typography className={classes.imgText2}>
           We do lots of stuffs , basically adding value to your product .

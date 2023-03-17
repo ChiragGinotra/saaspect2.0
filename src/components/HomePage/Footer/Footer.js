@@ -33,23 +33,65 @@ const Footer = () => {
         justifyContent="center"
         className={classes.gridContainer}
       >
-        <Grid item xs={6} sm={4} md={2} align="center">
+        <Grid
+          item
+          xs={6}
+          sm={4}
+          md={2}
+          align="center"
+          className={classes.gridItem}
+        >
           <Button className={classes.button}>Home Page</Button>
         </Grid>
-        <Grid item xs={6} sm={4} md={2} align="center">
+        <Grid
+          item
+          xs={6}
+          sm={4}
+          md={2}
+          align="center"
+          className={classes.gridItem}
+        >
           <Button className={classes.button}>About Us</Button>
         </Grid>
-        <Grid item xs={6} sm={4} md={2} align="center">
+        <Grid
+          item
+          xs={6}
+          sm={4}
+          md={2}
+          align="center"
+          className={classes.gridItem}
+        >
           <Button className={classes.button}>Book Audit</Button>
         </Grid>
-        <Grid item xs={6} sm={4} md={2} align="center">
+        <Grid
+          item
+          xs={6}
+          sm={4}
+          md={2}
+          align="center"
+          className={classes.gridItem}
+        >
           <Button className={classes.button}>Contact Us</Button>
         </Grid>
 
-        <Grid item xs={6} sm={4} md={2} align="center">
+        <Grid
+          item
+          xs={6}
+          sm={4}
+          md={2}
+          align="center"
+          className={classes.gridItem}
+        >
           <Button className={classes.button}>Our Services</Button>
         </Grid>
-        <Grid item xs={6} sm={4} md={2} align="center">
+        <Grid
+          item
+          xs={6}
+          sm={4}
+          md={2}
+          align="center"
+          className={classes.gridItem}
+        >
           <Button className={classes.button}>Blogs</Button>
         </Grid>
       </Grid>

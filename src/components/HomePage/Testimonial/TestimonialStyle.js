@@ -8,6 +8,9 @@ const useStyles = makeStyles((theme) => ({
     gap: "2.3rem",
     flexDirection: "column",
     fontFamily: ["Playfair Display", "serif"].join(","),
+    [theme.breakpoints.down("xl")]: {
+      marginTop: "19%",
+    },
     [theme.breakpoints.down("lg")]: {
       marginTop: "17%",
     },
@@ -27,6 +30,11 @@ const useStyles = makeStyles((theme) => ({
   mainHeading: {
     color: "#301E4E",
     fontWeight: 700,
+
+    [theme.breakpoints.down("xl")]: {
+      fontSize: "7rem",
+      lineHeight: "10rem",
+    },
 
     [theme.breakpoints.down("lg")]: {
       fontSize: "6.1rem",
@@ -63,8 +71,16 @@ const useStyles = makeStyles((theme) => ({
   },
 
   personAvatar: {
-    width: "10rem",
-    height: "10rem",
+    // width: "10rem",
+    // height: "10rem",
+    [theme.breakpoints.down("xl")]: {
+      width: "12rem",
+      height: "12rem",
+    },
+    [theme.breakpoints.down("lg")]: {
+      width: "10rem",
+      height: "10rem",
+    },
     [theme.breakpoints.down("md")]: {
       width: "8.5rem",
       height: "8.5rem",
@@ -84,6 +100,12 @@ const useStyles = makeStyles((theme) => ({
   mainText: {
     fontSize: "3.8rem",
     color: "#301E4E",
+    [theme.breakpoints.down("xl")]: {
+      fontSize: "4.5rem",
+    },
+    [theme.breakpoints.down("lg")]: {
+      fontSize: "3.8rem",
+    },
     [theme.breakpoints.down("md")]: {
       fontSize: "2.5rem",
     },
@@ -111,6 +133,12 @@ const useStyles = makeStyles((theme) => ({
     width: "10rem",
     alignSelf: "center",
     border: "2px solid #301E4E",
+    [theme.breakpoints.down("xl")]: {
+      width: "12rem",
+    },
+    [theme.breakpoints.down("lg")]: {
+      width: "10rem",
+    },
     [theme.breakpoints.down("md")]: {
       width: "5rem",
     },
@@ -127,6 +155,12 @@ const useStyles = makeStyles((theme) => ({
   nameText: {
     fontSize: "3rem",
     color: "#301E4E",
+    [theme.breakpoints.down("xl")]: {
+      fontSize: "3.8rem",
+    },
+    [theme.breakpoints.down("lg")]: {
+      fontSize: "3rem",
+    },
     [theme.breakpoints.down("md")]: {
       fontSize: "2.2rem",
     },
@@ -142,6 +176,12 @@ const useStyles = makeStyles((theme) => ({
   secondaryText: {
     fontSize: "1.7rem",
     color: "#FF6E6C",
+    [theme.breakpoints.down("xl")]: {
+      fontSize: "2rem",
+    },
+    [theme.breakpoints.down("lg")]: {
+      fontSize: "1.7rem",
+    },
     [theme.breakpoints.down("md")]: {
       fontSize: "1.2rem",
     },

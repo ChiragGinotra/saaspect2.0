@@ -11,10 +11,15 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#301E4E",
     // gap: "2.3rem",
     fontFamily: ["Playfair Display", "serif"].join(","),
+    [theme.breakpoints.down("xl")]: {
+      padding: "6rem",
+    },
+    [theme.breakpoints.down("lg")]: {
+      padding: "5rem",
+    },
 
     [theme.breakpoints.down("md")]: {
       padding: "3.5rem",
-      // gap: "4rem",
     },
 
     [theme.breakpoints.down("sm")]: {
@@ -24,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.down("xs")]: {
       flexDirection: "column",
-      padding: "0.75rem 0rem 1.5rem",
+      padding: "0.75rem 1rem 1.5rem",
       // gap: "5rem",
     },
   },
@@ -39,6 +44,14 @@ const useStyles = makeStyles((theme) => ({
     color: "#ffffff",
   },
 
+  gridItem: {
+    textAlign: "center",
+
+    [theme.breakpoints.down("xs")]: {
+      textAlign: "left",
+    },
+  },
+
   button: {
     // mt: 2,
     backgroundColor: "#301E4E",
@@ -48,10 +61,21 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1rem",
     textTransform: "none",
     textDecoration: "none",
-    textAlign: "center",
+    // textAlign: "center",
+    [theme.breakpoints.down("xl")]: {
+      fontSize: "1.6rem",
+    },
+    [theme.breakpoints.down("lg")]: {
+      fontSize: "1.3rem",
+    },
 
     [theme.breakpoints.down("md")]: {
       fontSize: "0.7rem",
+    },
+
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "0.7rem",
+      textAlign: "left",
     },
   },
 }));

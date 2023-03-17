@@ -44,34 +44,48 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
 
     gap: "20px",
-    padding: "8rem 0rem 8rem 3rem",
+    paddingLeft: "3vw",
+    // paddingLeft: { xs: "3rem", sm: "3rem", md: "3rem", lg: "3rem", xl: "3rem" },
+    // padding: "8rem 0rem 8rem 3rem",
     flexDirection: "column",
-    [theme.breakpoints.down("xs")]: {
-      padding: "1rem 0rem 1rem 3rem",
-    },
-    [theme.breakpoints.down("sm")]: {
-      padding: "3rem 0rem 3rem 3rem",
-    },
+    // [theme.breakpoints.down("xs")]: {
+    //   padding: "1rem 0rem 1rem 3rem",
+    // },
+    // [theme.breakpoints.down("sm")]: {
+    //   padding: "3rem 0rem 3rem 3rem",
+    // },
   },
   drawerText: {
-    [theme.breakpoints.down("sm")]: {
-      fontSize: "3rem",
-      lineHeight: "4rem",
-    },
-    [theme.breakpoints.down("xs")]: {
-      fontSize: "2.5rem",
-      lineHeight: "3.3rem",
-    },
+    // [theme.breakpoints.down("xl")]: {
+    //   fontSize: "5vw",
+    //   lineHeight: "7vw",
+    // },
+    // [theme.breakpoints.down("lg")]: {
+    //   fontSize: "3.8vw",
+    //   lineHeight: "5.1vw",
+    // },
+    // [theme.breakpoints.down("md")]: {
+    //   fontSize: "3rem",
+    //   lineHeight: "4rem",
+    // },
+    // [theme.breakpoints.down("sm")]: {
+    //   fontSize: "3rem",
+    //   lineHeight: "4rem",
+    // },
+    // [theme.breakpoints.down("xs")]: {
+    //   fontSize: "2.5rem",
+    //   lineHeight: "3.3rem",
+    // },
   },
-  drawerButton: {
-    [theme.breakpoints.down("sm")]: {
-      width: "22.5rem",
-    },
-    [theme.breakpoints.down("xs")]: {
-      width: "14rem",
-      fontSize: "0.9rem",
-    },
-  },
+  // drawerButton: {
+  //   [theme.breakpoints.down("sm")]: {
+  //     width: "22.5rem",
+  //   },
+  //   [theme.breakpoints.down("xs")]: {
+  //     width: "14rem",
+  //     fontSize: "0.9rem",
+  //   },
+  // },
 }));
 
 // const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -126,7 +140,15 @@ const NavigationItems = () => {
         PaperProps={{
           sx: {
             display: { xs: "block" },
-            width: { xs: "100vw", sm: "50vw", md: "50vw", lg: "40vw" },
+            width: {
+              xs: "100vw",
+              sm: "50vw",
+              md: "40vw",
+              lg: "35vw",
+              xl: "35vw",
+              // lg: "40vw",
+              // xl: "40vw",
+            },
 
             backgroundColor: "#301E4E",
           },
@@ -159,54 +181,90 @@ const NavigationItems = () => {
           </IconButton>
         </Box>
         <Box
-          className={classes.drawerMenu}
-          display="flex"
-          // p={4}
-          // mt={5}
-          justifyContent="flex-start"
-          fontWeight={500}
-          backgroundColor="#301E4E"
+          sx={{
+            display: "flex",
+            width: "100%",
+            height: "85vh",
+            alignItems: { xs: "start", sm: "center" },
+          }}
         >
-          {/* <Box mt={2} fontWeight="fontWeightBold">
+          <Box
+            className={classes.drawerMenu}
+            display="flex"
+            // p={4}
+            // mt={5}
+            justifyContent="flex-start"
+            fontWeight={500}
+            backgroundColor="#301E4E"
+          >
+            {/* <Box mt={2} fontWeight="fontWeightBold">
               Hello
             </Box>
             <Box ml={4} fontSize={14} fontWeight="fontWeightBold">
               miss
             </Box> */}
-          {menu.map((menu) => (
-            <MenuItem key={menu} onClick={handleCloseNavMenu}>
-              <Typography
-                className={classes.drawerText}
-                sx={{
-                  fontFamily: ["Playfair Display", "serif"].join(","),
-                  fontSize: { xs: "2.5rem", md: "3rem", lg: "3.8rem" },
-                  lineHeight: { xs: "3.3rem", md: "4rem", lg: "5.1rem" },
-                  fontWeight: "400",
-                }}
-              >
-                {menu}
-              </Typography>
-            </MenuItem>
-          ))}
-          <Button
-            variant="contained"
-            className={classes.drawerButton}
-            disableElevation
-            sx={{
-              color: "#ffffff",
-              width: { xs: "18rem", sm: "18rem", lg: "23rem" },
-              height: "4rem",
-              fontSize: { xs: "0.9", lg: "1.1rem" },
-              mt: "1.6rem",
-              lineHeight: "1.5rem",
-              backgroundColor: "#FF6E6C",
-              borderRadius: "12px",
-              // padding: "0.9rem 1.8rem",
-              "&:hover": { backgroundColor: "#FF6E6C" },
-            }}
-          >
-            BOOK AN FREE MARKETING ADUIT
-          </Button>
+            {menu.map((menu) => (
+              <MenuItem key={menu} onClick={handleCloseNavMenu}>
+                <Typography
+                  className={classes.drawerText}
+                  sx={{
+                    fontFamily: ["Playfair Display", "serif"].join(","),
+                    fontSize: {
+                      xs: "8vw",
+                      sm: "5vw",
+                      md: "3.5vw",
+                      lg: "4vw",
+                      xl: "4vw",
+                    },
+                    lineHeight: {
+                      sm: "5vh",
+
+                      md: "6vh",
+                      lg: "9vh",
+                      xl: "9vh",
+                    },
+                    color: { xs: "#E7D7F6" },
+                    fontWeight: "400",
+                  }}
+                >
+                  {menu}
+                </Typography>
+              </MenuItem>
+            ))}
+            <Button
+              variant="contained"
+              className={classes.drawerButton}
+              disableElevation
+              sx={{
+                color: "#ffffff",
+
+                width: {
+                  xs: "60vw",
+                  sm: "37vw",
+                  md: "28vw",
+                  lg: "28vw",
+                  xl: "26vw",
+                },
+                height: "4rem",
+                fontSize: {
+                  xs: "2.8vw",
+                  sm: "1.7vw",
+                  md: "1.3vw",
+                  lg: "1.3vw",
+                  xl: "1.1rem",
+                },
+                mt: "1.4rem",
+                lineHeight: "1.5rem",
+                backgroundColor: "#FF6E6C",
+                borderRadius: "12px",
+                // padding: "0.9rem 1.8rem",
+
+                "&:hover": { backgroundColor: "#FF6E6C" },
+              }}
+            >
+              BOOK AN FREE MARKETING ADUIT
+            </Button>
+          </Box>
         </Box>
       </Drawer>
       <AppBar
@@ -315,7 +373,9 @@ const NavigationItems = () => {
                     backgroundColor: "#ffffff",
                     display: "block",
                     fontFamily: ["Playfair Display", "serif"].join(","),
-                    fontSize: "35px",
+                    // fontSize: "35px",
+                    fontSize: "2.2vw",
+
                     textTransform: "none",
                     textDecoration: "none",
                   }}
@@ -338,7 +398,8 @@ const NavigationItems = () => {
 
               <MenuRoundedIcon
                 sx={{
-                  fontSize: "150%",
+                  // fontSize: "150%",
+                  fontSize: { xs: "10vw", sm: "5vw", md: "3vw" },
 
                   mr: "3vw",
                   p: "8%",

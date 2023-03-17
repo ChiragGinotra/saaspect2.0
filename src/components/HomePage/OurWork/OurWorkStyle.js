@@ -11,8 +11,12 @@ const useStyles = makeStyles((theme) => ({
     // gap: "2.3rem",
     fontFamily: ["Playfair Display", "serif"].join(","),
 
+    [theme.breakpoints.down("xl")]: {
+      marginTop: "12%",
+    },
+
     [theme.breakpoints.down("lg")]: {
-      marginTop: "17%",
+      marginTop: "15%",
     },
 
     [theme.breakpoints.down("md")]: {
@@ -31,6 +35,11 @@ const useStyles = makeStyles((theme) => ({
   mainHeading: {
     color: "#E2DAEB",
     fontWeight: 700,
+
+    [theme.breakpoints.down("xl")]: {
+      fontSize: "7rem",
+      lineHeight: "10rem",
+    },
 
     [theme.breakpoints.down("lg")]: {
       fontSize: "6.1rem",
@@ -66,10 +75,17 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "2%",
     backgroundColor: "#FF6E6C",
     fontSize: "1.7rem",
-
+    [theme.breakpoints.down("xl")]: {
+      // marginTop: "2.8rem",
+      fontSize: "1.4rem",
+      width: "11rem",
+      height: "5rem",
+    },
     [theme.breakpoints.down("lg")]: {
       // marginTop: "2.8rem",
       fontSize: "1.1rem",
+      width: "9.3rem",
+      height: "4rem",
     },
 
     [theme.breakpoints.down("md")]: {

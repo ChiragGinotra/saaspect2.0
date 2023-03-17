@@ -8,6 +8,9 @@ const useStyles = makeStyles((theme) => ({
 
   smallText: {
     color: "#FF6E6C",
+    [theme.breakpoints.down("xl")]: {
+      fontSize: "2rem",
+    },
     [theme.breakpoints.down("lg")]: {
       fontSize: "1.5rem",
     },
@@ -26,16 +29,20 @@ const useStyles = makeStyles((theme) => ({
     // fontSize: { lg: "6.1rem", md: "3.8rem", sm: "2.5rem" },
 
     // marginTop: { lg: "3.25rem", md: "2.5rem", sm: "1.75rem" },
-
+    [theme.breakpoints.down("xl")]: {
+      marginTop: "3.5rem",
+      fontSize: "3.5rem",
+      fontWeight: 900,
+    },
     [theme.breakpoints.down("lg")]: {
-      marginTop: "3rem",
-      fontSize: "6.1rem",
+      marginTop: "2.8rem",
+      fontSize: "3rem",
       fontWeight: 900,
     },
 
     [theme.breakpoints.down("md")]: {
       marginTop: "2rem",
-      fontSize: "3.8rem",
+      fontSize: "2.5rem",
       fontWeight: 400,
     },
 
@@ -53,6 +60,11 @@ const useStyles = makeStyles((theme) => ({
   paragraph: {
     color: "#E7D7F6",
     marginTop: "2.25rem",
+
+    [theme.breakpoints.down("xl")]: {
+      lineHeight: "3.25rem",
+      fontSize: "2.75rem",
+    },
 
     [theme.breakpoints.down("lg")]: {
       lineHeight: "2.75rem",

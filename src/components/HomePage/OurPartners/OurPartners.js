@@ -24,7 +24,11 @@ const OurPartners = () => {
 
   return (
     <container className={classes.complete}>
-      <Box>
+      <Box
+        sx={{
+          marginBottom: { sm: "1rem", md: "2rem", lg: "3rem", xl: "4rem" },
+        }}
+      >
         <Typography className={classes.mainHeading}>
           OUR <br />
           Partners.

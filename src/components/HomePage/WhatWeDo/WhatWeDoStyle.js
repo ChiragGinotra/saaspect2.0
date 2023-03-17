@@ -7,6 +7,9 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "5%",
     gap: "2.3rem",
     fontFamily: ["Playfair Display", "serif"].join(","),
+    [theme.breakpoints.down("xl")]: {
+      marginTop: "12%",
+    },
     [theme.breakpoints.down("lg")]: {
       marginTop: "17%",
     },
@@ -31,6 +34,10 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     paddingTop: "5%",
 
+    [theme.breakpoints.down("xl")]: {
+      gap: "25px",
+    },
+
     [theme.breakpoints.down("lg")]: {
       gap: "20px",
     },
@@ -53,6 +60,11 @@ const useStyles = makeStyles((theme) => ({
     color: "#301E4E",
     fontWeight: 700,
 
+    [theme.breakpoints.down("xl")]: {
+      fontSize: "7.5rem",
+      lineHeight: "10rem",
+    },
+
     [theme.breakpoints.down("lg")]: {
       fontSize: "6.1rem",
       lineHeight: "8.25rem",
@@ -72,6 +84,12 @@ const useStyles = makeStyles((theme) => ({
   imgText2: {
     color: "#0C0525",
     paddingBottom: "1rem",
+    paddingRight: "5%",
+
+    [theme.breakpoints.down("xl")]: {
+      lineHeight: "3.25rem",
+      fontSize: "2.75rem",
+    },
 
     [theme.breakpoints.down("lg")]: {
       lineHeight: "2.75rem",
@@ -84,6 +102,10 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.down("sm")]: {
+      lineHeight: "1.6rem",
+      fontSize: "1.3rem",
+    },
+    [theme.breakpoints.down("xs")]: {
       lineHeight: "1.1rem",
       fontSize: "0.8rem",
     },
@@ -93,10 +115,16 @@ const useStyles = makeStyles((theme) => ({
     width: "50vw",
     display: "flex",
     flexDirection: "column",
-    gap: "2.3rem",
+    // gap: "2.3rem",
     paddingLeft: "10%",
 
     color: "#301E4E",
+    [theme.breakpoints.down("xl")]: {
+      gap: "3rem",
+    },
+    [theme.breakpoints.down("lg")]: {
+      gap: "2.3rem",
+    },
     [theme.breakpoints.down("md")]: {
       gap: "1.5rem",
     },
@@ -111,6 +139,9 @@ const useStyles = makeStyles((theme) => ({
   },
 
   rightBoxText: {
+    [theme.breakpoints.down("xl")]: {
+      fontSize: "5rem",
+    },
     [theme.breakpoints.down("lg")]: {
       fontSize: "3.8rem",
     },
@@ -130,7 +161,7 @@ const useStyles = makeStyles((theme) => ({
   button: {
     // padding: "1.2rem 3.2rem 1.2rem 3.2rem",
     color: "#ffffff",
-    width: "9.3rem",
+    // width: "9.3rem",
     fontFamily: "Source Sans Pro",
     borderRadius: "8px",
     "&:hover": { backgroundColor: "#301E4E" },
@@ -139,9 +170,15 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#301E4E",
     fontSize: "1.3rem",
 
+    [theme.breakpoints.down("xl")]: {
+      // marginTop: "3rem",
+      fontSize: "1.4rem",
+      width: "11rem",
+    },
     [theme.breakpoints.down("lg")]: {
       marginTop: "2.8rem",
       fontSize: "1.1rem",
+      width: "9.3rem",
     },
 
     [theme.breakpoints.down("md")]: {
